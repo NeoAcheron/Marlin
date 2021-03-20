@@ -463,7 +463,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 275
+#define HEATER_0_MAXTEMP 300
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -513,9 +513,14 @@
   //#define DEFAULT_Kd 58.69
 
   // FLSUN QQ-S, 205 C with 100% fan, custom duct
-  #define DEFAULT_Kp 14.68
-  #define DEFAULT_Ki 0.93
-  #define DEFAULT_Kd 57.94
+  // #define DEFAULT_Kp 14.68
+  // #define DEFAULT_Ki 0.93
+  // #define DEFAULT_Kd 57.94
+  
+  // Mosquito Hotend with Slice engineering 50W heater block,   210 C with 0% fan, no ducts
+  #define DEFAULT_Kp 23.23
+  #define DEFAULT_Ki 2.46
+  #define DEFAULT_Kd 54.93
 
 #endif // PIDTEMP
 
