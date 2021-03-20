@@ -953,7 +953,7 @@
  * vibration and surface artifacts. The algorithm adapts to provide the best possible step smoothing at the
  * lowest stepping frequencies.
  */
-//#define ADAPTIVE_STEP_SMOOTHING
+#define ADAPTIVE_STEP_SMOOTHING
 
 /**
  * Custom Microstepping
@@ -1813,8 +1813,8 @@
  *
  * Override the default value based on the driver type set in Configuration.h.
  */
-//#define MINIMUM_STEPPER_POST_DIR_DELAY 20
-//#define MINIMUM_STEPPER_PRE_DIR_DELAY 20
+#define MINIMUM_STEPPER_POST_DIR_DELAY 60
+#define MINIMUM_STEPPER_PRE_DIR_DELAY 60
 
 /**
  * Minimum stepper driver pulse width (in µs)
@@ -1827,7 +1827,7 @@
  *
  * Override the default value based on the driver type set in Configuration.h.
  */
-#define MINIMUM_STEPPER_PULSE 0
+#define MINIMUM_STEPPER_PULSE 1
 
 /**
  * Maximum stepping rate (in Hz) the stepper driver allows
@@ -2487,22 +2487,22 @@
    */
   #define HYBRID_THRESHOLD
 
-  #define X_HYBRID_THRESHOLD     100  // [mm/s]
-  #define X2_HYBRID_THRESHOLD    100
-  #define Y_HYBRID_THRESHOLD     100
-  #define Y2_HYBRID_THRESHOLD    100
-  #define Z_HYBRID_THRESHOLD       3
+  #define X_HYBRID_THRESHOLD     60  // [mm/s]
+  #define X2_HYBRID_THRESHOLD    60
+  #define Y_HYBRID_THRESHOLD     60
+  #define Y2_HYBRID_THRESHOLD    60
+  #define Z_HYBRID_THRESHOLD     60
   #define Z2_HYBRID_THRESHOLD      3
   #define Z3_HYBRID_THRESHOLD      3
   #define Z4_HYBRID_THRESHOLD      3
-  #define E0_HYBRID_THRESHOLD     30
-  #define E1_HYBRID_THRESHOLD     30
-  #define E2_HYBRID_THRESHOLD     30
-  #define E3_HYBRID_THRESHOLD     30
-  #define E4_HYBRID_THRESHOLD     30
-  #define E5_HYBRID_THRESHOLD     30
-  #define E6_HYBRID_THRESHOLD     30
-  #define E7_HYBRID_THRESHOLD     30
+  #define E0_HYBRID_THRESHOLD     25
+  #define E1_HYBRID_THRESHOLD     25
+  #define E2_HYBRID_THRESHOLD     25
+  #define E3_HYBRID_THRESHOLD     25
+  #define E4_HYBRID_THRESHOLD     25
+  #define E5_HYBRID_THRESHOLD     25
+  #define E6_HYBRID_THRESHOLD     25
+  #define E7_HYBRID_THRESHOLD     25
 
   /**
    * Use StallGuard2 to home / probe X, Y, Z.
